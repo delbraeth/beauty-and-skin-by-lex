@@ -2,7 +2,7 @@
 
 A **discussion draft** of the future website for Beauty & Skin by Lex, Lexi's esthetics business in Mason, Ohio.
 
-- Lexi is currently an esthetics student. The site does not advertise bookable services, and the draft banner says so.
+- Lexi is currently an esthetics student. The site promotes her appointments at the Aveda Fredric's student salon (Thursdays and Saturdays, school prices, booked and paid through the school) and a waitlist for her own studio in 2027.
 - Search engines are asked not to index the site (a `noindex` tag on the page).
 - The waitlist form is a placeholder and does not save anything.
 
@@ -13,7 +13,9 @@ A **discussion draft** of the future website for Beauty & Skin by Lex, Lexi's es
 
 ## Before launch
 
-1. Replace the "About" placeholder text and add a photo of Lexi.
-2. Connect the waitlist form (e.g. a Google Form).
-3. Remove the draft banner and the `noindex` tag.
-4. Swap the waitlist for real booking once she is licensed.
+1. Confirm the student salon phone number and add it to the booking section.
+2. Confirm with the school that students may promote their own appointments.
+3. Replace the "About" placeholder text and add a photo of Lexi.
+4. Connect the waitlist form (e.g. a Google Form).
+5. Remove the draft banner and the `noindex` tag.
+6. Swap the waitlist for real booking once she is licensed.
