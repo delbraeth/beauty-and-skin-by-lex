@@ -101,12 +101,24 @@ section { padding-block: clamp(64px, 10vw, 112px); }
 .lead { font-size: 18px; color: var(--muted); }
 .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; }
 .hero-art { display: grid; place-items: center; }
-.seal { width: min(340px, 70vw); max-width: 100%; height: auto; }
-.seal .disc { fill: var(--surface); stroke: var(--champagne); stroke-width: 1; }
-.seal .inner-ring { fill: none; stroke: var(--champagne); stroke-width: .75; }
-.seal .ring-text { font: 500 11px var(--body); fill: var(--fg); }
-.seal .letter { font: italic 300 88px var(--display); fill: var(--fg); }
-@media (max-width: 760px) { .hero-grid { grid-template-columns: 1fr; } .hero-art { order: -1; } .seal { width: min(220px, 60vw); } }
+/* Soft pebble: the brand mark. Always rosewater with plum type, in both themes. */
+.pebble {
+  width: min(380px, 80vw); aspect-ratio: 13 / 10; max-width: 100%;
+  background: var(--rosewater); color: var(--plum);
+  border-radius: 58% 42% 50% 50% / 52% 48% 52% 48%;
+  display: grid; place-items: center; align-content: center; gap: 12px; text-align: center;
+}
+.pebble .w { font: 300 clamp(30px, 4vw, 46px)/1 var(--display); white-space: nowrap; }
+.pebble .w i { color: #9E6B78; }
+.pebble .s { font-size: 10px; font-weight: 500; letter-spacing: .5em; text-transform: uppercase; padding-left: .5em; }
+@media (prefers-reduced-motion: no-preference) {
+  .pebble { animation: breathe 14s ease-in-out infinite alternate; }
+  @keyframes breathe {
+    from { border-radius: 58% 42% 50% 50% / 52% 48% 52% 48%; }
+    to   { border-radius: 46% 54% 44% 56% / 56% 44% 56% 44%; }
+  }
+}
+@media (max-width: 760px) { .hero-grid { grid-template-columns: 1fr; } .hero-art { order: -1; } .pebble { width: min(300px, 78vw); } }
 
 /* About */
 .photo {
