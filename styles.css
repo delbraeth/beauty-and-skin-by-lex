@@ -101,15 +101,12 @@ section { padding-block: clamp(64px, 10vw, 112px); }
 .lead { font-size: 18px; color: var(--muted); }
 .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; }
 .hero-art { display: grid; place-items: center; }
-.arch {
-  width: min(320px, 70vw); aspect-ratio: 4 / 5; max-width: 100%;
-  border: 1px solid var(--champagne); border-radius: 999px 999px 4px 4px;
-  background: linear-gradient(180deg, var(--rosewater), color-mix(in srgb, var(--rosewater) 40%, var(--bg)));
-  display: grid; place-items: center; align-content: center; gap: 10px; color: var(--plum);
-}
-.arch .l { font: italic 300 clamp(120px, 18vw, 180px)/.8 var(--display); }
-.arch .s { font-size: 10px; font-weight: 500; letter-spacing: .45em; text-transform: uppercase; padding-left: .45em; }
-@media (max-width: 760px) { .hero-grid { grid-template-columns: 1fr; } .hero-art { order: -1; } .arch { width: min(220px, 60vw); } }
+.seal { width: min(340px, 70vw); max-width: 100%; height: auto; }
+.seal .disc { fill: var(--surface); stroke: var(--champagne); stroke-width: 1; }
+.seal .inner-ring { fill: none; stroke: var(--champagne); stroke-width: .75; }
+.seal .ring-text { font: 500 11px var(--body); fill: var(--fg); }
+.seal .letter { font: italic 300 88px var(--display); fill: var(--fg); }
+@media (max-width: 760px) { .hero-grid { grid-template-columns: 1fr; } .hero-art { order: -1; } .seal { width: min(220px, 60vw); } }
 
 /* About */
 .photo {
