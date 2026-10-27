@@ -112,10 +112,11 @@ section { padding-block: clamp(64px, 10vw, 112px); }
 .pebble .w i { color: #9E6B78; }
 .pebble .s { font-size: 10px; font-weight: 500; letter-spacing: .5em; text-transform: uppercase; padding-left: .5em; }
 @media (prefers-reduced-motion: no-preference) {
-  .pebble { animation: breathe 14s ease-in-out infinite alternate; }
+  /* One breath every 8s: swell and reshape on the inhale, settle on the exhale. */
+  .pebble { animation: breathe 8s ease-in-out infinite; will-change: transform, border-radius; }
   @keyframes breathe {
-    from { border-radius: 58% 42% 50% 50% / 52% 48% 52% 48%; }
-    to   { border-radius: 46% 54% 44% 56% / 56% 44% 56% 44%; }
+    0%, 100% { transform: scale(1);    border-radius: 58% 42% 50% 50% / 52% 48% 52% 48%; }
+    50%      { transform: scale(1.06); border-radius: 42% 58% 38% 62% / 60% 40% 60% 40%; }
   }
 }
 @media (max-width: 760px) { .hero-grid { grid-template-columns: 1fr; } .hero-art { order: -1; } .pebble { width: min(300px, 78vw); } }
