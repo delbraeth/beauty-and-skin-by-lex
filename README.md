@@ -14,7 +14,7 @@ A **discussion draft** of the future website for Beauty & Skin by Lex, Lexi's es
 ## Before launch
 
 1. Confirm with the school that students may promote their own appointments.
-2. Replace "About" placeholder text and add a photo of Lexi.
+2. Replace the "About" placeholder text and add a photo of Lexi.
 3. Connect the waitlist form (e.g. a Google Form).
 4. Remove the draft banner and the `noindex` tag.
 5. Swap the waitlist for real booking once she is licensed.
