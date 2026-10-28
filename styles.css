@@ -193,3 +193,4 @@ input[type="text"]:focus, input[type="email"]:focus { border-color: var(--accent
 .foot a { text-underline-offset: 4px; }
 .men { font-size: 14px; border-top: 1px solid var(--line); padding-top: 16px; }
 .men strong { font-weight: 600; }
+.tel { font-weight: 600; text-underline-offset: 4px; text-decoration-color: var(--champagne); white-space: nowrap; }
